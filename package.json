@@ -1,0 +1,44 @@
+{
+  "name": "daydreamers",
+  "version": "1.0.0",
+  "description": "Application for daydreamers",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": ""
+  },
+  "author": "sriharsha",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "^1.13.2",
+    "colors": "^1.1.2",
+    "connect-flash": "0.1.1",
+    "cookie-parser": "1.4.3",
+    "express": "^4.13.1",
+    "express-session": "1.15.6",
+    "jsonwebtoken": "^8.2.2",
+    "lodash": "^3.10.0",
+    "mongoose": "^4.0.8",
+    "morgan": "^1.6.1",
+    "passport": "0.4.0",
+    "passport-facebook": "2.1.1",
+    "passport-google-oauth": "1.0.0",
+    "passport-instagram": "1.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "1.0.0",
+    "swagger-ui-express": "^3.0.9"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "supertest": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriharsha53/daydreamers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sriharsha53/daydreamers/issues"
+  },
+  "homepage": "https://github.com/sriharsha53/daydreamers#readme"
+}
