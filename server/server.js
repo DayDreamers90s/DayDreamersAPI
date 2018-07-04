@@ -8,6 +8,7 @@ var flash    = require('connect-flash');
 var swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('./swagger.json');
 var auth = require('./auth/routes').router(passport);
+var cors = require('cors');
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -29,6 +30,7 @@ var session      = require('express-session');
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({extended:false }));
+app.use(cors());
 app.use(cookieParser()); // read cookies (needed for auth)
 // app.use(express.static(path.join(__dirname,'public')));
 app.use(session({
