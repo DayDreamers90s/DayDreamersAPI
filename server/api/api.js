@@ -11,6 +11,7 @@ router.use('/dreamlikes', require('./dreamlikes/dreamLikesRoutes'));
 router.use('/dreamcomments', require('./dreamcomments/dreamCommentsRoutes'));
 router.use('/daydreamcards', require('./daydreamcards/dayDreamCardsRoutes'));
 router.use('/cardcategories', require('./cardcategories/cardCategoriesRoutes'));
+router.use('/cardlevels', require('./cardlevels/cardLevelRoutes'));
 router.use('/captureddreams', require('./captureddreams/capturedDreamsRoutes'));
 
 module.exports = router;
