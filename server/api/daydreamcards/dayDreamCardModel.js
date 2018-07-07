@@ -6,7 +6,8 @@ var dayDreamCardSchema = new mongoose.Schema({
     }, 
     description       :   String, 
     image: { data: Buffer, contentType: String },
-    cardcategory: [{type: mongoose.Schema.Types.ObjectId, ref: 'cardcategory'}]               
+    cardcategory: [{type: mongoose.Schema.Types.ObjectId, ref: 'cardcategory'}],    
+    cardlevel : {type: mongoose.Schema.Types.ObjectId, ref: 'cardlevel'}         
 });
 
 module.exports = mongoose.model('daydreamcard', dayDreamCardSchema);
