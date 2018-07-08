@@ -13,9 +13,10 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // db.url is different depending on NODE_ENV
-mongoose.connect(config.db.url, {
-  useMongoClient: true,
-});
+// mongoose.connect(config.db.url, {
+//   useMongoClient: true,
+// });
+require('mongoose').connect(config.db.url);
 
 logger.log('connected to database - ' + config.db.url);
 require('./auth/passport')(passport); // pass passport for configuration
