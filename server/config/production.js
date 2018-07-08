@@ -3,7 +3,7 @@ module.exports = {
     logging: false,
     secret: 'scoobydoodreamerprod',
     db: {
-      url: process.env.MONGODB_URI||'mongodb://localhost/daydreamersdb'
+      url: process.env.MONGODB_URI
     },
   };
   
