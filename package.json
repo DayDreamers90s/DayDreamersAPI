@@ -2,7 +2,7 @@
   "name": "daydreamers",
   "version": "1.0.0",
   "description": "Application for daydreamers",
-  "main": "server/server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
     "test": ""
