@@ -12,7 +12,7 @@ var cors = require('cors');
 var multer = require('multer');
 var mongoose = require('mongoose');
 
-exports.UPLOAD_PATH = 'uploads';
+var UPLOAD_PATH = 'uploads';
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
       cb(null, UPLOAD_PATH)

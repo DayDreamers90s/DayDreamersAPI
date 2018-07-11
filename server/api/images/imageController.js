@@ -1,6 +1,6 @@
 var Image = require('./imageModel');
-var UPLOAD_PATH = require('../../server/UPLOAD_PATH');
 var _ = require('lodash');
+var UPLOAD_PATH = 'uploads';
 
 exports.params = function(req, res, next, id) {
     Image.findById(id)
