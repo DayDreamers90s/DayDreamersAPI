@@ -13,5 +13,6 @@ router.use('/daydreamcards', require('./daydreamcards/dayDreamCardsRoutes'));
 router.use('/cardcategories', require('./cardcategories/cardCategoriesRoutes'));
 router.use('/cardlevels', require('./cardlevels/cardLevelRoutes'));
 router.use('/captureddreams', require('./captureddreams/capturedDreamsRoutes'));
+router.use('/images', require('./images/imageRoutes'));
 
 module.exports = router;
