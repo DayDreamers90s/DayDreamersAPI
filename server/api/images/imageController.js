@@ -1,5 +1,5 @@
 var Image = require('./imageModel');
-var UPLOAD_PATH = require('./UPLOAD_PATH');
+var UPLOAD_PATH = require('../../server/UPLOAD_PATH');
 var _ = require('lodash');
 
 exports.params = function(req, res, next, id) {
