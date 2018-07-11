@@ -5,7 +5,7 @@ var dayDreamCardSchema = new mongoose.Schema({
         required:   true
     }, 
     description       :   String, 
-    image: { data: Buffer, contentType: String },
+    image: {type: mongoose.Schema.Types.ObjectId, ref: 'imageModel'},
     cardcategory: [{type: mongoose.Schema.Types.ObjectId, ref: 'cardcategory'}],    
     cardlevel : {type: mongoose.Schema.Types.ObjectId, ref: 'cardlevel'}         
 });
