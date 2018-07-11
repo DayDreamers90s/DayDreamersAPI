@@ -71,6 +71,8 @@ exports.get = function(req, res, next) {
 
 
 exports.post = function(req, res, next) {
+    console.log('********************');
+    console.log(JSON.stringify(req));
     var newImage = new ImageModel();
     newImage.filename = req.file.filename;
     newImage.originalName = req.file.originalname;
