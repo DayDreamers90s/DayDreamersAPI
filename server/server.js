@@ -12,18 +12,6 @@ var cors = require('cors');
 var multer = require('multer');
 var mongoose = require('mongoose');
 
-var UPLOAD_PATH = 'uploads';
-var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-      cb(null, UPLOAD_PATH)
-  },
-  filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + Date.now())
-  }
-})
-exports.upload = multer({ storage: storage })
-
-
 mongoose.Promise = global.Promise;
 
 // db.url is different depending on NODE_ENV
