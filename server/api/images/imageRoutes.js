@@ -4,7 +4,7 @@ var UPLOAD_PATH = 'uploads';
 var multer=require('multer');
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-      console.log('destination: '+ destination);
+      console.log('destination: '+ UPLOAD_PATH);
       cb(null, UPLOAD_PATH)
   },
   filename: function (req, file, cb) {
