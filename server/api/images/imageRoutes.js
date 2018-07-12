@@ -29,7 +29,7 @@ router.post('/', function (req, res) {
         if (err) {
             console.log('********Error in multer************');
             console.log(err);
-            return res.sendStatus(500).send(err);
+            return res.sendStatus(500);
         }
     }), (req, res, next) => {
         console.log('********************');
